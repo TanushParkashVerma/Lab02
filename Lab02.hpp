@@ -13,8 +13,8 @@ void createFunctionList() {
     std::ofstream read("Readings.txt");
     int integerPair;
     float doublePair;
-    int nums = 512 + (std::rand() % (1024 - 512 + 1));
-    for (integerPair = 0; integerPair < nums; integerPair++) {
+    int endValue = 512 + (std::rand() % (1024 - 512 + 1));
+    for (integerPair = 0; integerPair < endValue; integerPair++) {
         doublePair = 90.000 + rand() / ((RAND_MAX / (50.000 - 90.000)));
         read << integerPair << "\t" << std::fixed << std::setprecision(3) << doublePair << endl;
     }
