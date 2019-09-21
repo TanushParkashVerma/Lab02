@@ -15,13 +15,13 @@ void createFunctionList() {
     float doublePair;
     int nums = 512 + (std::rand() % (1024 - 512 + 1));
     for (integerPair = 0; integerPair < nums; integerPair++) {
-        doublePair = 90.0000 + rand() / ((RAND_MAX / (50.000 - 90.000)));
+        doublePair = 90.000 + rand() / ((RAND_MAX / (50.000 - 90.000)));
         read << integerPair << "\t" << std::fixed << std::setprecision(3) << doublePair << endl;
     }
     read.close();
 }
 
-// Find Median fucntion
+// Find Median function
 double findMedian(double a[], int n) {
     // check for even case
     if (n % 2 != 0) {
